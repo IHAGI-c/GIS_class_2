@@ -20,6 +20,7 @@ class ProfileCreateView(CreateView):
     def get_success_url(self):
         return reverse('accountapp:detail', kwargs={'pk': self.object.user.pk})
 
+
 class ProfileUpdateView(UpdateView):
     model = profile
     context_object_name = 'target_profile'
