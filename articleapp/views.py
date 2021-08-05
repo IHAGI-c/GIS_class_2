@@ -18,7 +18,7 @@ class ArticleCreateView(CreateView):
     form_class = ArticleCreationForm
     template_name = 'articleapp/create.html'
 
-    def from_valid(self, form):
+    def form_valid(self, form):
         form.instance.writer = self.request.user
         return super().form_valid(form)
 
@@ -57,4 +57,4 @@ class ArticleListView(ListView):
     model = Article
     context_object_name = 'article_list'
     template_name = 'articleapp/list.html'
-    paginate_by = 20
+    paginate_by = 5
