@@ -48,7 +48,7 @@ class AccountDetailView(DetailView, MultipleObjectMixin):
     template_name = 'accountapp/detail.html'
 
     paginate_by = 20
-    
+
     def get_context_data(self, **kwargs):
         article_list = Article.objects.filter(writer=self.object)
         return super().get_context_data(object_list=article_list,
