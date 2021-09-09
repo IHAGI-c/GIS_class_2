@@ -72,8 +72,6 @@ fabric.properties
 
 venv/
 
-.env
-
 db.sqlite3
 
 .idea/
@@ -86,3 +84,9 @@ media/
 staticfiles/
 
 haseom.pem
+
+.env
+
+Dockerfile
+
+nginx.conf
