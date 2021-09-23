@@ -87,6 +87,4 @@ haseom.pem
 
 .env
 
-Dockerfile
-
 nginx.conf
