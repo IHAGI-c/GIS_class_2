@@ -86,5 +86,3 @@ staticfiles/
 haseom.pem
 
 .env
-
-nginx.conf
